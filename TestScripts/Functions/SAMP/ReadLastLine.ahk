@@ -1,4 +1,4 @@
-#Include SAMP_ReadLastLine
+#Include SAMP_ReadLastLine.ahk
 
 File = %A_MyDocuments%\GTA San Andreas User Files\SAMP\chatlog.txt
 
