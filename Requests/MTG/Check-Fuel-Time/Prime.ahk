@@ -1,3 +1,4 @@
+#Include Fuel.ahk
 File = %A_MyDocumemts%\GTA San Andreas User Files\SAMP\chatlog.txt
 !1::
 Fuel:=Fuel(File, 3)
