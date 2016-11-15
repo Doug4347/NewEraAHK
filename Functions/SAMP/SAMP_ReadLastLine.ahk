@@ -1,7 +1,7 @@
 SAMP_ReadLast(File)
 {
 Loop, Read, %File%
-Index:=A_Index-2
-FileReadLine, Line, %File%, %Index%
+If A_LoopReadLine
+Line:=A_LoopReadLine
 Return, Line
 }
