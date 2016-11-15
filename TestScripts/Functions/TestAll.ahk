@@ -1,3 +1,4 @@
+FileDelete, Tester.ahk
 InputBox, Func,, Please put the function in.
 If ErrorLevel
 ExitApp
