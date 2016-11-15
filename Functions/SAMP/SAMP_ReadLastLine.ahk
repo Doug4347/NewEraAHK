@@ -1,12 +1,7 @@
-SAMP_ReadLast(FileIn)
+SAMP_ReadLast(File)
 {
 Loop, Read, %File%
-Index:=A_Index-4
-Loop, 4
-{
-Index+=1
-FileReadLine, Line2, %File%, %Index%
-Line = %A_Index%: %Line2%`n%Line%
-}
+Index:=A_Index-2
+FileReadLine, Line, %File%, %Index%
 Return, Line
 }
