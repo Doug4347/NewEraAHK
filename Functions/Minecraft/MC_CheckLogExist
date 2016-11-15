@@ -1,0 +1,9 @@
+MC_LogExist(File)
+{
+If not File
+File = %A_AppData%\.minecraft\logs\latest.log
+IfExist, %File%
+Return, 1
+Else
+Return, 0
+}
