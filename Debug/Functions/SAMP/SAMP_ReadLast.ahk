@@ -16,6 +16,7 @@ FileAppend,
 
 ), debug.txt
 Index-=1
+FileReadLine, Line, %File%, %Index%
 FileAppend,
 (
 
