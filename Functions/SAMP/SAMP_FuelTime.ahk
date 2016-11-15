@@ -1,3 +1,12 @@
+/*
+Please note:
+This only works on the MTG SAMP server and will require modifications to work on other servers.
+
+MTG:
+mt-gaming.com
+register.mt-gaming.com
+samp.mt-gaming.com
+*/
 FuelTime(Fuel)
 {
 Sec:=Fuel*66.7
