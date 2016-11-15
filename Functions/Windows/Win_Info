@@ -1,0 +1,11 @@
+Win_Info(byref OutVersion,byref OutVersion,byref OutBits,byref OutPCName,byref OutUserName,byref IsAdmin)
+  OitType:=A_OSType
+  OutVersion:=A_OSVersion
+  If A_Is64bitOS
+  OutBits = 64bit
+  Else
+  OutBit = 32bit
+  OutPCName:=A_ComputerName
+  OutUserName:=A_UserName
+  IsAdmin:=A_IsAdmin
+}
