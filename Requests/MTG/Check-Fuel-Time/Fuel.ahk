@@ -1,6 +1,7 @@
-FuelGet(File, Offset)
+FuelGet(File, Offset, Delay)
 {
 SendInput, t^a/checkfuel{Enter}
+Sleep, %Delay%
 Loop, Read, File
 Index:=A_Index-Offset
 FileReadLine, Out, %File%, %Index%
