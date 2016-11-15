@@ -22,7 +22,7 @@ StringTrimRight, Sec, Sec, 7
 Hour:=Min/60
 IfInString, Hour, .
 StringTrimRight, Hour, Hour, 7
-Min-==our*60
+Min-=Hour*60
 IfInString, Min, .
 StringTrimRight, Min, Min, 7
 Time = %Hour%h %Min%m %Sec%s
