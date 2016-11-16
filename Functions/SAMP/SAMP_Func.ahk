@@ -1,3 +1,12 @@
+/*
+Please note:
+This only works on the MTG SAMP server and will require modifications to work on other servers.
+
+MTG:
+mt-gaming.com
+register.mt-gaming.com
+samp.mt-gaming.com
+*/
 FuelTime(Fuel)
 {
 Sec:=Fuel*66.7
@@ -13,15 +22,18 @@ StringTrimRight, Hour, Hour, 7
 Min-==our*60
 IfInString, Min, .
 StringTrimRight, Min, Min, 7
-Return, Hour":"Min":"Sec
+Time = %Hour%-%Min%-%Sec%
+Return, Time
 }
 
-Fuel()
+Fuel(File, Delay)
 {
 SendInput, t^a/checkfuel{Enter}
-Loop, Read, File
-Index:=A_Index-Offset
-FileReadLine, Out, %File%, %Index%
+If Delay
+Sleep, %Delay%
+Loop, Read, %File%
+If A_LoopReadLine
+Out:=A_LoopReadLine
 IfNotInString, Out, /100]
 Return, "Err_NotFuelLine"
 StringTrimRight, Out, Out,5
@@ -32,8 +44,8 @@ Return, Out
 SAMP_ReadLast(File)
 {
 Loop, Read, %File%
-Index:=A_Index-2
-FileReadLine, Line, %File%, %Index%
+If A_LoopReadLine
+Line:=A_LoopReadLine
 Return, Line
 }
 
