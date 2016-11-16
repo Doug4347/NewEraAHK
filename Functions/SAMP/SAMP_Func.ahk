@@ -78,3 +78,47 @@ FileMove, %File%, %Dest%\%NewName%
 Return, "Success"
 }
 
+SAMP_Indicator(Direct, State)
+{
+IfInString, Direct, R
+Direct = Right
+Else
+IfInString, Direct, L
+Direct = Left
+Else
+Return, "Err_InvalidDirection"
+If State
+SendInput, t^a/indicators off{Enter}
+Else
+SendInput, t^a/indicators %Direct%{Enter}
+Return, State*-1
+}
+
+SAMP_PhoneState(File)
+{
+Loop, Read, %File%
+{
+IfInString, A_LoopReadLine, Incoming call on
+Line:=A_LoopReadLine
+IfInString, A_LoopReadLine, You have picked up the phone
+Line:=A_LoopReadLine
+IfInString, A_LoopReadLine, You got a message on your phone
+Line:=A_LoopReadLine
+IfInString, A_LoopReadLine, SMS from 343
+Line:=A_LoopReadLine
+IfInString, A_LoopReadLine, The ringing has stopped
+Line:=A_LoopReadLine
+}
+IfInString, Line, Incoming call on
+Return, 1
+IfInString, Line, You have picked up the phone
+Return, 2
+IfInString, Line, You got a message on your phone
+Return, 3
+IfInString, Line, SMS from 343
+Return, 4
+IfInString, Line, The ringing has stopped
+Return, 5
+Return, "Err_NoPhone"
+}
+
