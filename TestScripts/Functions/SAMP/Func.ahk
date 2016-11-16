@@ -4,7 +4,7 @@ Dest:=A_ScriptDir
 NewName = MovedLog.txt
 
 !1::
-Fuel:=Fuel()
+Fuel:=Fuel(File, 1000)
 FuelTime:=FuelTime(Fuel)
 FileAppend, Fuel: %Fuel%`n%FuelTime%`n, log.txt
 SoundBeep
