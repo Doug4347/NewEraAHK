@@ -32,7 +32,7 @@ SendInput, t^a/checkfuel{Enter}
 If Delay
 Sleep, %Delay%
 Loop, Read, %File%
-If A_LoopReadLine
+IfInString, A_LoopReadLine, /100]
 Out:=A_LoopReadLine
 IfNotInString, Out, /100]
 Return, "Err_NotFuelLine"
