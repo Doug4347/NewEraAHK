@@ -207,13 +207,13 @@ LSPDCalc:
 	Gui, Add, Checkbox, gUpdateTimes x28 y260 vInstigatingAnarchy, Instigating Public Anarchy
 	Gui, Add, Checkbox, gUpdateTimes x28 y280 vRacketeering, Racketeering
 	Gui, Add, Checkbox, gUpdateTimes x28 y300 vKidnapping, Kidnapping
-	Gui, Add, Checkbox, gUpdateTimes x28 y300 vKidnappingLEO, Kidnapping an LEO
-	Gui, Add, Checkbox, gUpdateTimes x28 y320 vAttemptedRobbery, Attempted Robbery
-	Gui, Add, Checkbox, gUpdateTimes x28 y340 vRobbery, Robbery
-	Gui, Add, Checkbox, gUpdateTimes x28 y360 vArmedRobbery, Armed Robbery
-	Gui, Add, Checkbox, gUpdateTimes x28 y380 vBurglary, Breaking and entering (Burglary)
-	Gui, Add, Checkbox, gUpdateTimes x28 y400 vGambling, Illegal Gambling
-	Gui, Add, Checkbox, gUpdateTimes x28 y420 vBribery, Bribery
+	Gui, Add, Checkbox, gUpdateTimes x28 y320 vKidnappingLEO, Kidnapping an LEO
+	Gui, Add, Checkbox, gUpdateTimes x28 y340 vAttemptedRobbery, Attempted Robbery
+	Gui, Add, Checkbox, gUpdateTimes x28 y360 vRobbery, Robbery
+	Gui, Add, Checkbox, gUpdateTimes x28 y380 vArmedRobbery, Armed Robbery
+	Gui, Add, Checkbox, gUpdateTimes x28 y400 vBurglary, Breaking and entering (Burglary)
+	Gui, Add, Checkbox, gUpdateTimes x28 y420 vGambling, Illegal Gambling
+	Gui, Add, Checkbox, gUpdateTimes x28 y440 vBribery, Bribery
 	
 	Gui, Add, Checkbox, gUpdateTimes x400 y80 vAssault, Assault (Spitting, physical threats etc.)
 	Gui, Add, Checkbox, gUpdateTimes x400 y100 vAssaultLEO, Assault (Spitting, physical threats etc.) of an LEO
