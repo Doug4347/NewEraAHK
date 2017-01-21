@@ -5,6 +5,8 @@ ARREST:			/arrest [playerid] [time (1 minute - 120 minutes)] [allow bail? 'yes' 
 TICKET: 		/ticket [ID] [Price]
 RECORD CRIME:	/recordcrime [fullname] [offence]
 */
+IfNotExist, LSPD.png
+UrlDownloadToFile, http://i.imgur.com/KGYrdR4.png, LSPD.png
 
 StringTrimRight, SettingsFile, A_ScriptName, 4
 SettingsFile = %SettingsFile%.ini
@@ -182,7 +184,7 @@ LSPDCalc:
 	Gui, Add, Edit, x28 w250 vCustomFine gUpdateTimes, 0
 	Gui, Add, Text, x28, Custom Time:
 	Gui, Add, Edit, x28 w250 vCustomTime gUpdateTimes, 0
-	Gui, Add, Text, x28 w365 r10 vEditableText, Ticket Total: $%TicketCash%`nTime Total: %Mins% Mins`nFine Total: $%FineCash%`nLicense Strikes: %LicenseStrikes% Strikes`nNotes:`nBail: %Bail%`n%Notes%
+	Gui, Add, Text, x28 w365 r15 vEditableText, Ticket Total: $%TicketCash%`nTime Total: %Mins% Mins`nFine Total: $%FineCash%`nLicense Strikes: %LicenseStrikes% Strikes`nNotes:`nBail: %Bail%`n%Notes%
 	Gui, Add, Pic, x389 y480, LSPD.png
 	Gui, Show
 Return
