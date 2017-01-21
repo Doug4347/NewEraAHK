@@ -281,7 +281,7 @@ Arrest:
 Return
 
 RecordCrimes:
-	MsgBox, Crimes
+	MsgBox, 16,, This part of the app has not been scripted yet. Sorry!
 Return
 
 UpdateTimes:
