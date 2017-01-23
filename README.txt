@@ -12,10 +12,6 @@ Contact:
 doug4347@hotmail.com
 Private Message on Github
 
-Testers:
-Right now I have no PC, meaning I have no way of testing my scripts.
-If you wish to help test some scripts, please feel free to contact me.
-
 Collaborations:
 If you wish to collaborate with me on something, feel free to contact me. I'm always up for something new, or a good challenge.
 
