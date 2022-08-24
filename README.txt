@@ -6,7 +6,7 @@ I've had about 3 year worth of AHK experience, and I'm still learning everyday. 
 
 License:
 What you see in this repo was all made by me.
-All items here go under the GNU General Public License v3 license, which is the standard provided with AHK.
+All items here go under the GNU General Public License v3.
 
 Contact:
 doug4347@hotmail.com
@@ -19,4 +19,4 @@ Tutorials & Requests:
 If you wish to suggest a script, request a script, or request a tutorial, feel free to contact me. I've made several previous tutorials, and made several requested scripts, and I enjoy doing them.
 
 Signed:
-Doug4347/Douglas Sean Spear
+Doug4347/RedNeckSnailSpit
